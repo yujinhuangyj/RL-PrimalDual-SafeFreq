@@ -48,7 +48,7 @@ if policyname == "TD3PD":
     }
     agent = TD3PD.TD3PD(Env, policy_param, device) 
 
-filename_test = "TD3PD_20"
+filename_test = "TD3PD_1000"
 filename_actor = os.path.join(current_dir, 'Model','TD3PD', filename_test + '_actor.pth')
 filename_critic = os.path.join(current_dir, 'Model','TD3PD', filename_test + '_critic.pth')
 agent.actor = torch.load(filename_actor, map_location=device)
